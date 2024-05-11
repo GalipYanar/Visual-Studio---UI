@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body style="background-color: rgb(207, 207, 207);">
+        <div style="background-color: whitesmoke; border: 1px solid; " >
+            <div>
+                <h1>Login</h1>
+
+                <div>
+                    <label for="User-ID"><b>Kullanıcı Adı:</b></label> <br>
+                    <input placeholder="Mail yada Kullanıcı Adınız" type="text"> <br> <br>
+                </div>
+
+                <div> 
+                    <label for="User-Password"><b>Şifrenizi Giriniz:</b></label><br>
+                    <input placeholder="Şifreniz" type="password"> <br> <br>
+                </div>
+
+                <div>
+                    <label for="UserType">Kullanıcı Türü</label>
+                    <select name="UserType" id="UserType">
+                        <option value="user1">Seçim yapın</option>
+                        <option value="user2">Admin</option>
+                        <option value="user3">Kullanıcı</option>
+                    </select>
+                </div>
+                    <!-- datalist ile de yapılabilirdi sanırım-->
+                <div>
+                    <input type="checkbox">
+                    <label for="checkbox">Beni Hatırla</label>
+                    <input style="background-color: blue; color: white;" type="submit" onclick="alert('Giriş yapılıyor, lütfen bekleyiniz.')" value="Giriş Yapın">
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </body>
+</html>

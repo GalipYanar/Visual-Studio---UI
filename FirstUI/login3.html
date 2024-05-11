@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Dış div'i ekranın ortasına yerleştirmek için */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Tam ekran yüksekliği */
+            margin: 0;
+        }
+
+        /* İç div stilleri, genel görünüm ve kenarlık */
+        .login-box {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+            width: 300px; /* Sabit genişlik */
+        }
+    </style>
+</head>
+<body style="background-color: rgb(207, 207, 207); margin: 0;">
+    <div class="center">
+        <div class="login-box">
+            <h1 style="text-align: center;">Login</h1>
+            <div>
+                <label for="User-ID"><b>Kullanıcı Adı:</b></label> <br>
+                <input id="User-ID" placeholder="Mail ya da Kullanıcı Adınız" type="text"> <br> <br>
+            </div>
+
+            <div> 
+                <label for="User-Password"><b>Şifrenizi Giriniz:</b></label><br>
+                <input id="User-Password" placeholder="Şifreniz" type="password"> <br> <br>
+            </div>
+
+            <div>
+                <label for="UserType"><b>Kullanıcı Türü : </b></label>
+                <select name="UserType" id="UserType">
+                    <option value="user1">Seçim yapın</option>
+                    <option value="user2">Admin</option>
+                    <option value="user3">Kullanıcı</option>
+                </select>
+            </div>
+                <br>
+            <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox"><b>Beni Hatırla</b></label>
+                <input style="background-color: blue; color: white;" type="submit" onclick="alert('Giriş yapılıyor, lütfen bekleyiniz.')" value="Giriş Yapın">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
